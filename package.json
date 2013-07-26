@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "amqp": "~0.1.7"
-  }
+  },
   "keywords": [
     "gelf",
     "stream",
