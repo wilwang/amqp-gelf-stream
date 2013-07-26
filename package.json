@@ -1,0 +1,23 @@
+{
+  "name": "wilwang",
+  "version": "0.1.0",
+  "description": "Creates a stream to work with bunyan to send log messages to an amqp server in gelf format.  This is derivative of gelf-stream which provides a direct connection to a Graylog2 server.",
+  "main": "amqp-gelf-stream.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilwang/amqp-gelf-stream"
+  },
+  "dependencies": {
+    "amqp": "~0.1.7"
+  }
+  "keywords": [
+    "gelf",
+    "stream",
+    "amqp",
+    "bunyan",
+    "graylog",
+    "graylog2"
+  ],
+  "author": "Wil Wang",
+  "license": "BSD"
+}
