@@ -1,5 +1,5 @@
 {
-  "name": "amqp-gelf-string",
+  "name": "amqp-gelf-stream",
   "version": "0.1.0",
   "description": "Creates a stream to work with bunyan to send log messages to an amqp server in gelf format.  This is derivative of gelf-stream which provides a direct connection to a Graylog2 server.",
   "main": "amqp-gelf-stream.js",
