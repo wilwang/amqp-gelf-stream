@@ -14,7 +14,15 @@ exports.create = function (publishToQueue, connOptions, implOptions) {
   stream.writeable = true;
   stream.write = function(log) {
     if (connectionReady) {
-      connection.publish(publishToQueue, bunyanToGelf(log));
+      
+      var jsonLog;
+      if (typeof log === 'string') {
+        jsonLog = JSON.parse(log);
+      } else { 
+        jsonLog = log;
+      }
+
+      connection.publish(publishToQueue, bunyanToGelf(jsonLog));
     }
   }
   stream.end = function(log) {
